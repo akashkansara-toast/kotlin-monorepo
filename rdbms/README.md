@@ -3,6 +3,11 @@ A library to manage changes to database via Liquibase
 
 # Steps
 
+## Login to Local Postgres
+```shell
+psql -h localhost -U postgres
+```
+
 ## Create DB
 ```sql
 CREATE DATABASE kotlin_monorepo;
