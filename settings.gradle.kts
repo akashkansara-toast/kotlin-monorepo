@@ -8,9 +8,6 @@
  */
 
 rootProject.name = "kotlin-monorepo"
-include("app", "list", "utilities")
 include("rdbms")
-include("guice")
-include("guice:src:main:kotlin")
-findProject(":guice:src:main:kotlin")?.name = "kotlin"
 include("guiceapp")
+include("dropwizardapp")
