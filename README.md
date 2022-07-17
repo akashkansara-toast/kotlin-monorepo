@@ -1,5 +1,8 @@
-# Contents
+# Steps
 1. [Initialise](#initalise)
+2. Start with [RDBMS project](rdbms)
+3. Move on to [Guice project](guiceapp)
+4. Finish with [Dropwizard project](dropwizardapp)
 
 # Initalise
 ```shell
