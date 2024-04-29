@@ -11,3 +11,6 @@ rootProject.name = "kotlin-monorepo"
 include("rdbms")
 include("guiceapp")
 include("dropwizardapp")
+include("bg-info")
+include("s2s-tr")
+include("valid")

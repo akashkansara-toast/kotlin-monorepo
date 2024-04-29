@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/bg-info" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/dropwizardapp" />
             <option value="$PROJECT_DIR$/guiceapp" />
             <option value="$PROJECT_DIR$/rdbms" />
+            <option value="$PROJECT_DIR$/s2s-tr" />
+            <option value="$PROJECT_DIR$/valid" />
           </set>
         </option>
       </GradleProjectSettings>
