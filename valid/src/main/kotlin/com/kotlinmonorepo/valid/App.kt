@@ -3,6 +3,7 @@ package com.kotlinmonorepo.valid
 import com.kotlinmonorepo.valid.model.Bike
 import com.kotlinmonorepo.valid.model.Car
 import com.kotlinmonorepo.valid.model.Truck
+import com.kotlinmonorepo.valid.model.Vehicle
 import com.kotlinmonorepo.valid.service.VehicleService
 
 fun main(args: Array<String>) {
@@ -29,9 +30,15 @@ class App {
                 licensePlate = "",
                 seatCount = 1
             )
+            val v1 = Vehicle(
+                "",
+                "",
+                1
+            )
             vehicleService.saveCar(car1)
             vehicleService.saveBike(bike1)
             vehicleService.saveTruck(t1)
+            vehicleService.saveVehicle(v1)
         }
     }
 }
