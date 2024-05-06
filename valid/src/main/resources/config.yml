@@ -1,0 +1,26 @@
+version: 1.0
+config:
+  - Vehicle:
+    - name:
+        constraints:
+          - Length:
+              data:
+                min: 2
+                max: 10
+          - Contains:
+              data:
+                text: "Tesla"
+        corrections:
+          - Trim:
+            data:
+              length: 10
+    - license:
+        constraints:
+          - Length:
+              data:
+                equals: 15
+        corrections:
+          - Regex:
+              data:
+                regex: '[^abc]'
+                exclude: true
