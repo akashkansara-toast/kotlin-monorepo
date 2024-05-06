@@ -4,6 +4,7 @@ import com.kotlinmonorepo.valid.model.Bike
 import com.kotlinmonorepo.valid.model.Car
 import com.kotlinmonorepo.valid.model.Truck
 import com.kotlinmonorepo.valid.model.Vehicle
+import com.kotlinmonorepo.valid.model.Wheel
 import jakarta.validation.Validation
 import org.hibernate.validator.HibernateValidator
 import org.hibernate.validator.cfg.defs.NotEmptyDef
@@ -34,9 +35,12 @@ class VehicleService {
             .getter(Truck::manufacturer.name)
             .constraint(NotEmptyDef())
             .getter("licensePlate")
-            // .ignoreAnnotations(true)
             .constraint(NotNullDef())
             .constraint(SizeDef().min(2).max(14))
+            // .getter("wheels").constraint()
+        constraintMapping.type(Wheel::class.java)
+            .getter("size")
+            .constraint(SizeDef().min(14).max(20))
         val validator1 = configuration.addMapping(constraintMapping)
             .buildValidatorFactory()
             .validator
@@ -54,7 +58,6 @@ class VehicleService {
             .getter("manufacturer")
             .constraint(NotEmptyDef())
             .getter("licensePlate")
-            .ignoreAnnotations(true)
             .constraint(NotNullDef())
             .constraint(SizeDef().min(2).max(14))
         val validator1 = configuration.addMapping(constraintMapping)

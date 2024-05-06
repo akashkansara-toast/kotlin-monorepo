@@ -4,6 +4,7 @@ import com.kotlinmonorepo.valid.model.Bike
 import com.kotlinmonorepo.valid.model.Car
 import com.kotlinmonorepo.valid.model.Truck
 import com.kotlinmonorepo.valid.model.Vehicle
+import com.kotlinmonorepo.valid.model.Wheel
 import com.kotlinmonorepo.valid.service.VehicleService
 
 fun main(args: Array<String>) {
@@ -28,7 +29,8 @@ class App {
             val t1 = Truck(
                 manufacturer = "",
                 licensePlate = "",
-                seatCount = 1
+                seatCount = 1,
+                wheels = listOf(Wheel("28 in"))
             )
             val v1 = Vehicle(
                 "",
